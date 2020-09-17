@@ -1,0 +1,38 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "dino",
+        "password": "abcd",
+        "role": "user"
+      },
+      {
+        "id": 2,
+        "username": "admin",
+        "password": "root",
+        "role": "admin"
+      }
+    ],
+    "posts":[
+        {
+            "id":1,
+            "gambar":"https://assets-a1.kompasiana.com/items/album/2019/12/27/images-5e050cec097f36747b353fb2.jpeg",
+            "caption":"among us"
+        }
+    ],
+    "comments":[
+        {
+            "id":1,
+            "isi":"hahahahha",
+            "postId":1,
+            "userId":1
+        }
+    ],
+    "likes":[
+        {
+            "id":1,
+            "userid":1,
+            "postId":1
+        }
+    ]
+  }

@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import {BrowserRouter} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'//reactstrap harus import cssnya bootstrap juga
+import reducers from './redux/reducers'
+import {Provider} from 'react-redux'
+import {createStore,applyMiddleware} from 'redux'
+import Thunk from 'redux-thunk'
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={createStore(reducers,{},applyMiddleware(Thunk))}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
