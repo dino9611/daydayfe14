@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Collapse,
   Navbar,
@@ -13,16 +13,18 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
-
+import {Link} from 'react-router-dom'
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  // useEffect(()=>{
+    
+  // },[isOpen])
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Link to="/">reactstrap</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>

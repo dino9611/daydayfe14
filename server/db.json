@@ -1,38 +1,57 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "dino",
-        "password": "abcd",
-        "role": "user"
-      },
-      {
-        "id": 2,
-        "username": "admin",
-        "password": "root",
-        "role": "admin"
-      }
-    ],
-    "posts":[
-        {
-            "id":1,
-            "gambar":"https://assets-a1.kompasiana.com/items/album/2019/12/27/images-5e050cec097f36747b353fb2.jpeg",
-            "caption":"among us"
-        }
-    ],
-    "comments":[
-        {
-            "id":1,
-            "isi":"hahahahha",
-            "postId":1,
-            "userId":1
-        }
-    ],
-    "likes":[
-        {
-            "id":1,
-            "userid":1,
-            "postId":1
-        }
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "username": "dino",
+      "password": "abcd",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "root",
+      "role": "admin"
+    },
+    {
+      "username": "anggi",
+      "password": "ada ada",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "username": "anggi aja",
+      "password": "adadad",
+      "role": "user",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "gambar": "https://assets-a1.kompasiana.com/items/album/2019/12/27/images-5e050cec097f36747b353fb2.jpeg",
+      "caption": "among us",
+      "userId":1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "isi": "hahahahha",
+      "postId": 1,
+      "userId": 1
+    },
+    {
+      "isi": "blalablabla",
+      "postId": 1,
+      "userId": 1,
+      "id": 2
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "userid": 1,
+      "postId": 1
+    }
+  ]
+}
